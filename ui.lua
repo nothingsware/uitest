@@ -68,7 +68,7 @@ local function CreateDrag(gui)
     end
     ]]
 
-	---we do or it wil get leaked its a custom ui wdym? needs to be obsfucated
+
 	local lastMoved = 0
 	local con
 	gui.InputBegan:Connect(function(input)
@@ -137,18 +137,18 @@ function Library:new(options)
 
 	local mainFrame = Instance.new("Frame", nEWGABRIEL)
 	mainFrame.Name = "MainFrame"
-	mainFrame.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+	mainFrame.BackgroundColor3 = Color3.fromRGB(0, 49, 6)
 	mainFrame.BackgroundTransparency = 0.1
 	mainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	mainFrame.BorderSizePixel = 0
 	mainFrame.Visible = false
 	mainFrame.Position = UDim2.fromScale(0.0815, 0.0599)
-	mainFrame.Size = UDim2.fromOffset(538, 357)
+	mainFrame.Size = UDim2.fromOffset(510, 357)
 	CreateDrag(mainFrame)
 
 	local sound = Instance.new("Sound")
 	sound.Parent = mainFrame
-	sound.SoundId = "rbxassetid://6958727243" -- Replace with the ID of your sound
+	sound.SoundId = "rbxassetid://2977012439" -- Replace with the ID of your sound
 	sound.Volume = 10
 	sound.PlayOnRemove = true
 	sound:Play()
@@ -2375,3 +2375,4 @@ function Library:new(options)
 	RunService:BindToRenderStep(uid, 2000, UpdateOrientation)
 	return brennen
 end
+
